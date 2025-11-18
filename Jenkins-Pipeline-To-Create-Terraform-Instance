@@ -23,7 +23,7 @@ pipeline {
     }
     stage ("Deploy") {
         steps {
-            sh 'ansible-playbook -i /opt/ansible/inventory/aws_ec2.yml /var/lib/jenkins/workspace/My Deployment/ansible/deployment.yml'
+            sh 'ansible-playbook -i /opt/ansible/inventory/aws_ec2.yml /var/lib/jenkins/workspace/MyDeployment/ansible/deployment.yml'
         }
     }
 }
